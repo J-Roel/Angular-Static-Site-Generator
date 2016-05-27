@@ -11,8 +11,8 @@ This is a static site generator project.
   Coming soon
   
   
-### Notes: 
-  ####5/26/2016 
+<h3>Notes:</h3>
+  <h4>5/26/2016</h4>
   <ul>
     <li>Can create an object representation of the local file structure based on reading the DOM.</li>
     <li>Directory setup to use a category tag with the attribute "name" representing the name of category, to grab and display a list from said category</li>
