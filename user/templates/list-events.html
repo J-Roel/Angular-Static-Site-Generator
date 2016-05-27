@@ -1,0 +1,22 @@
+<ul #list-events ng-controller="Blog as Blog">
+	<li class="clickable" ng-click="Blog.viewPost(data.localUrl)">
+			<div class="row">
+				<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2">
+					<img ng-src='{{data.localUrl}}{{data.metadata.image}}'>
+				</div>
+				<div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+					<h3>{{data.metadata.title}}</h3>
+					<ul>
+						<li><strong>Date: </strong>{{data.metadata.date}}</li>
+						<li><strong>Time: </strong>{{data.metadata.time}}</li>
+						<li><strong>Location: </strong>{{data.metadata.location}}</li>
+						<li><strong>About: </strong> {{data.metadata.description}}</li>
+					</ul>
+					<a class="map-link" title="Directions" href="{{data.metadata.directionsURL}}">
+						<i class="fa fa-map fa-2x" aria-hidden="true"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</li>
+</ul>

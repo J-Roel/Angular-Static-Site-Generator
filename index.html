@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code For FoCo</title>
+	<link rel="icon" type="image/png" href="/assets/images/logo.png">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<!-- FONTS -->
+	<link href='https://fonts.googleapis.com/css?family=Quantico' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+
+	<!-- STYLES -->
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<link rel="stylesheet" type="text/css" href="../user/templates/templates.css">
+	<!-- Meta for Bootstrap-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<base href="/">
+
+</head>
+
+
+<body ng-app="codeforfoco" ng-controller="Blog as Blog" class="container-fluid">
+
+	<div ng-include src="'views/main.html'"></div>
+
+
+<!-- SCRIPTS -->
+<script   src="https://code.jquery.com/jquery-2.2.3.min.js"   integrity="sha256-a23g1Nt4dtEYOj7bR+vTu7+T8VP13humZFBJNIYoEJo="   crossorigin="anonymous"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+<!-- Angular and Necessary Files -->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.5/angular-route.min.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+<script type="text/javascript" src="js/services/markdown.services.js"></script>
+<script type="text/javascript" src="js/config/routes.config.js"></script>
+
+<script type="text/javascript" src="js/controllers/blog.controller.js"></script>
+<script type="text/javascript" src="js/directives/category.directive.js"></script>
+
+<script type="text/javascript" src="js/lib/showdown.js"></script>
+<script src="https://use.fontawesome.com/5afbe70f2b.js"></script>
+<script type="text/javascript" src="user/main.js"></script>
+
+</body>
+</html>

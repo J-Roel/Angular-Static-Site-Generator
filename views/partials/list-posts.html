@@ -1,0 +1,16 @@
+<div ng-controller="Blog as Blog">
+	{{Blog.fucker}}
+	<div ng-repeat="data in result.posts | limitTo: numOfPosts ">
+		<article>
+			<div ng-include src="'/user/templates/' + data.metadata.template"></div>
+			
+		</article>
+	</div>
+	<a href="/events.html"><h3>See all events  <i class="fa fa-arrow-circle-o-right" aria-hidden="true"></i></h3></a>
+	<span ng-model="test"></span>
+	{{ test = Blog.isPostShowing }}
+	{{test}}
+	<section ng-show="test">
+		<h1>FUKCING WORKDKLJFLKDSHGF:KDSHJGKSH:</h1>
+	</section>
+</div>

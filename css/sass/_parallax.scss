@@ -1,0 +1,34 @@
+/* =========================================
+  Individual section images
+  Add a copy of header or section here and
+  then put "module parallax-1" in the html
+============================================ */
+
+
+
+
+
+/* ================================
+ PARALLAX
+=================================== */
+section.module, header.module{
+	margin:0;
+	padding:0;
+}
+section.module:last-child, header.module:last-child {
+  margin-bottom: 0;
+}
+section.module.content, section.module.content {
+  padding: 40px 0;
+}
+section.module.parallax, header.module.parallax {
+  width: 100vw;
+  min-width: 100%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+section.module.parallax:last-child, header.module.parallax:last-child {
+	margin-bottom: 0;
+}

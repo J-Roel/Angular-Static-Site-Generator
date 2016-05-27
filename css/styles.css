@@ -1,0 +1,377 @@
+/* MAIN */
+/*-------GRID-------*/
+/*
+
+	USING BOOTSTRAP
+
+$grid-columns: 12;
+$grid-max-width: 65em;
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";
+*/
+/*--------FONT-------*/
+/*#282822;*/
+/*-------STRUCTURE-------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+html {
+  box-sizing: border-box; }
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, main {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1 {
+  font-size: 2.5em; }
+
+h2 {
+  font-size: 2em; }
+
+h3 {
+  font-size: 1.5em; }
+
+h4 {
+  font-size: 1em; }
+
+h5 {
+  font-size: 0.8em; }
+
+h6 {
+  font-size: 0.5em; }
+
+h1, h2, h3 {
+  font-family: "Quantico", sans-serif;
+  color: #060505; }
+
+h4, h5, h6 {
+  font-family: "Lato", sans-serif;
+  color: #060505; }
+
+p, a, li {
+  font-family: "Lato", sans-serif;
+  font-size: 1em;
+  color: #060505; }
+
+p {
+  margin: 2%; }
+
+ul {
+  margin-left: 5%; }
+  ul li {
+    margin: 2%;
+    list-style: disc; }
+    ul li a {
+      background-color: rgba(0, 0, 0, 0.1);
+      border: 1px solid rgba(0, 0, 0, 0.2); }
+    ul li a:hover {
+      text-decoration: none; }
+
+strong {
+  font-weight: bolder; }
+
+/*@import "core";*/
+/* CHILD THEME */
+/*
+	CHILD - Override Defaults of core
+*/
+html {
+  overflow-x: hidden; }
+
+body {
+  padding: 0 !important; }
+
+hr {
+  margin: 1em 2% 1em 2%; }
+
+/* #header# */
+header {
+  background-color: #fff;
+  background-image: url("../assets/images/hero-one.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 700px;
+  padding-top: 4%; }
+  header .content {
+    background-color: rgba(200, 200, 220, 0.2);
+    border: 5px solid rgba(200, 200, 220, 0.5);
+    margin-top: 5%; }
+  header img {
+    display: block;
+    margin: 0 auto 0 auto;
+    width: 125px;
+    height: 125px;
+    transition: 0.5s;
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); }
+  header h1 {
+    padding: 2% 0 1% 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(200, 200, 220, 0.5); }
+  header h3 {
+    padding: 1em;
+    text-align: center; }
+  header a {
+    color: #060505;
+    -webkit-transition: color 0.5s;
+    transition: color 0.5s;
+    font-size: 1em; }
+    header a h3 {
+      display: inline-block;
+      width: 6em;
+      margin: 4% 1% 4% 1%;
+      border: 1px solid #060505;
+      background-color: rgba(255, 255, 255, 0.4);
+      text-align: center;
+      -webkit-transition: 0.5s;
+      transition: 0.5s; }
+    header a h3:hover {
+      background-color: rgba(255, 255, 255, 0.7);
+      color: #000; }
+    header a i {
+      margin: 12px; }
+  header a:hover {
+    color: #000; }
+
+#about, #events {
+  padding: 5%;
+  height: 100%; }
+  #about section .content, #events section .content {
+    color: #060505;
+    margin: 5%; }
+  #about p, #about ul li, #about a, #about h3, #events p, #events ul li, #events a, #events h3 {
+    color: #060505; }
+  #about img, #events img {
+    width: 100%;
+    height: 100%; }
+
+#events {
+  background-color: gray;
+  padding-bottom: 5%; }
+  #events li {
+    position: relative;
+    list-style: none;
+    padding: 1%;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    -webkit-transition: 0.5s;
+    transform: 0.5s;
+    background-color: rgba(200, 200, 220, 0.2);
+    /*border-left: 5px solid rgba(200,200,220,0.5);*/ }
+    #events li ul li {
+      background-color: none;
+      background: none;
+      border: none;
+      margin: 0;
+      padding: 1%; }
+    #events li ul li:hover {
+      background: none;
+      background-color: none;
+      border: none; }
+    #events li h3 {
+      font-size: 1.1em;
+      margin: 0;
+      padding: 1%; }
+      #events li h3 strong {
+        font-size: 1.2em;
+        text-decoration: underline; }
+    #events li a {
+      background: none;
+      background-color: none;
+      border: none; }
+    #events li a.map-link {
+      position: absolute;
+      right: 5px;
+      top: 5px; }
+  #events li:hover {
+    background-color: rgba(0, 0, 0, 0.2); }
+
+#partners {
+  background-color: #fff;
+  height: 600px;
+  padding-top: 4%; }
+  #partners .content {
+    background-color: rgba(200, 200, 220, 0.2);
+    border: 5px solid rgba(200, 200, 220, 0.5);
+    margin-top: 5%; }
+  #partners a img {
+    width: 100%; }
+
+section.module.parallax-2 {
+  background-image: url("../assets/images/bg-75.jpg"); }
+
+footer {
+  background-color: gray;
+  height: 100%;
+  padding: 2%; }
+  footer h1 {
+    padding: 2% 0 1% 0;
+    text-align: center;
+    border-bottom: 1px solid rgba(200, 200, 220, 0.5); }
+  footer h3 {
+    display: inline-block;
+    padding: 5px;
+    text-align: center; }
+  footer a {
+    margin: 0;
+    padding: 5px; }
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  #events, #partners, #about, section, header, footer {
+    height: 100%; }
+
+  section.module.parallax-2 {
+    background-image: none; }
+
+  header {
+    padding: 0; }
+    header .content {
+      margin-top: 0; }
+    header h1 {
+      font-size: 1.7em; }
+    header h3 {
+      font-size: 1.2em; }
+
+  section {
+    height: 100%; }
+    section .content {
+      padding: 5%; }
+    section h3 {
+      font-size: 1.2em; }
+    section p, section li {
+      font-size: 1em; } }
+#post {
+  position: fixed;
+  z-index: 10;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4); }
+  #post header {
+    background-color: #fff;
+    background-image: url("../assets/images/hero-one.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 700px;
+    padding-top: 4%; }
+    #post header .content {
+      background-color: rgba(200, 200, 220, 0.2);
+      border: 5px solid rgba(200, 200, 220, 0.5);
+      margin-top: 5%; }
+    #post header img {
+      display: inline-block;
+      margin: 0 auto 0 auto;
+      width: 125px;
+      height: 125px;
+      transition: 0.5s;
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg); }
+    #post header h1 {
+      display: inline-block;
+      padding: 2% 0 1% 0;
+      text-align: center;
+      border-bottom: 1px solid rgba(200, 200, 220, 0.5); }
+    #post header h3 {
+      padding: 1em;
+      text-align: center; }
+    #post header a {
+      color: #060505;
+      -webkit-transition: color 0.5s;
+      transition: color 0.5s;
+      font-size: 1em; }
+      #post header a h3 {
+        display: inline-block;
+        width: 6em;
+        margin: 4% 1% 4% 1%;
+        border: 1px solid #060505;
+        background-color: rgba(255, 255, 255, 0.4);
+        text-align: center;
+        -webkit-transition: 0.5s;
+        transition: 0.5s; }
+      #post header a h3:hover {
+        background-color: rgba(255, 255, 255, 0.7);
+        color: #000; }
+      #post header a i {
+        margin: 12px; }
+    #post header a:hover {
+      color: #000; }
+
+/*Helper classes*/
+.clickable {
+  cursor: pointer; }
+
+/* SPECIAL */
+/* =========================================
+  Individual section images
+  Add a copy of header or section here and
+  then put "module parallax-1" in the html
+============================================ */
+/* ================================
+ PARALLAX
+=================================== */
+section.module, header.module {
+  margin: 0;
+  padding: 0; }
+
+section.module:last-child, header.module:last-child {
+  margin-bottom: 0; }
+
+section.module.content, section.module.content {
+  padding: 40px 0; }
+
+section.module.parallax, header.module.parallax {
+  width: 100vw;
+  min-width: 100%;
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+section.module.parallax:last-child, header.module.parallax:last-child {
+  margin-bottom: 0; }
+
+/*# sourceMappingURL=styles.css.map */

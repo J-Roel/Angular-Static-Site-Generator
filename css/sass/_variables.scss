@@ -1,0 +1,31 @@
+
+/*-------GRID-------*/
+/*
+
+	USING BOOTSTRAP
+
+$grid-columns: 12;
+$grid-max-width: 65em;
+$breakpoint-small: "only screen and (min-width: 20em)";
+$breakpoint-medium: "only screen and (min-width: 30em)";
+*/
+
+/*--------FONT-------*/
+$primaryFontFamily: 'Quantico', sans-serif;
+$primaryFontColor: #060505; /*#282822;*/
+
+$secondaryFontFamily: 'Lato', sans-serif;
+$secondaryFontColor: #060505;
+
+$fontSizeMultiplier: 0;
+
+
+/*-------STRUCTURE-------*/
+$headerBackColor: #fff;
+$headerHeroImage: url("../assets/images/hero-one.jpg");
+$headerContentBackColor: rgba(200,200,220,0.2);
+$partnersHeroImage: url("../assets/images/bg-75.jpg");
+$eventsBackColor: gray;
+$footerBackColor: gray;
+
+
